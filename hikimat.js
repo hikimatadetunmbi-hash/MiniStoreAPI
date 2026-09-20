@@ -118,6 +118,6 @@ const filteredProducts =products.filter(p=> p.category === category);
 res.send(filteredProducts);
 });
 
-app.listen(3000 ,()=>{
+app.listen(process.env.port||3000, ()=>{
     console.log("Server running at http://localhost:3000");
 });
